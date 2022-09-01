@@ -30,13 +30,13 @@ void main() {
     ...body03TestCaseList,
     ...body04TestCaseList,
     TypographyTestCase(
-      name: 'Typography.title01.extraBold.setColor(color: Colors.red)',
-      typography: Typography.title01.extraBold.setColor(color: Colors.red),
+      name: 'Typography.title01.extraBold.setColor(color: Palette.pink400)',
+      typography: Typography.title01.extraBold.setColor(color: Palette.pink400),
       expectTextStyle: const TextStyle(
         fontFamily: Assets.fontPretendard,
         fontSize: 30,
         height: 1.2,
-        color: Colors.red,
+        color: Palette.pink400,
         fontWeight: FontWeight.w800,
         leadingDistribution: TextLeadingDistribution.even,
       ),

@@ -15,7 +15,7 @@ class RawTypography extends TextStyle {
     required this.fontSize,
     required this.lineHeight,
     required this.fontWeight,
-    Color? color,
+    Palette? color,
   }) : super(
           fontFamily: Assets.fontPretendard,
           fontSize: fontSize,
@@ -25,8 +25,7 @@ class RawTypography extends TextStyle {
           leadingDistribution: TextLeadingDistribution.even,
         );
 
-  // TODO: color parameter type to `Palette`
-  RawTypography setColor({required Color color}) {
+  RawTypography setColor({required Palette color}) {
     return RawTypography._(
       fontSize: fontSize,
       lineHeight: lineHeight,
