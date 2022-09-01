@@ -23,11 +23,11 @@ class Palette extends Color {
   // << Default <<
 
   // >> Pink >>
-  /// **pink50**: `#FFD4E0`
-  static const Palette pink50 = Palette._(0XFFFFD4E0);
+  /// **pink50**: `#FFE4EA`
+  static const Palette pink50 = Palette._(0XFFFFE4EA);
 
-  /// **pink100**: `#FFC6D5`
-  static const Palette pink100 = Palette._(0XFFFFC6D5);
+  /// **pink100**: `#FFBACA`
+  static const Palette pink100 = Palette._(0XFFFFBACA);
 
   /// **pink200**: `#FF8CA7`
   static const Palette pink200 = Palette._(0XFFFF8CA7);
