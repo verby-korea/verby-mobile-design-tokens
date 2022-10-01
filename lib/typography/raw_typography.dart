@@ -25,12 +25,12 @@ class RawTypography extends TextStyle {
           leadingDistribution: TextLeadingDistribution.even,
         );
 
-  RawTypography setColor({required Palette color}) {
+  RawTypography setColor({required SemanticColor color}) {
     return RawTypography._(
       fontSize: fontSize,
       lineHeight: lineHeight,
       fontWeight: fontWeight,
-      color: color,
+      color: color.palette,
     );
   }
 }
