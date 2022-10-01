@@ -46,4 +46,8 @@ class SemanticColor {
   /// **background10**: DefaultPaletteExtension.white
   static const SemanticColor background10 = SemanticColor._(DefaultPaletteExtension.white);
   // <<< Background <<<
+
+  // >>> Default >>>
+  static const SemanticColor transparent = SemanticColor._(DefaultPaletteExtension.transparent);
+  // <<< Default <<<
 }
