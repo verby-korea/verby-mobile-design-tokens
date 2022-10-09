@@ -29,13 +29,25 @@ void main() {
     ...caption1TestCaseList,
     ...caption2TestCaseList,
     TypographyTestCase(
-      name: 'Typography.caption2.bold.setColor(color: SemanticColor.text90)',
-      typography: Typography.caption2.bold.setColor(color: SemanticColor.text90),
+      name: 'Typography.caption2.bold.setColorBySemanticColor(color: SemanticColor.text90)',
+      typography: Typography.caption2.bold.setColorBySemanticColor(color: SemanticColor.text90),
       expectTextStyle: TextStyle(
         fontFamily: Assets.fontPretendard,
         fontSize: 12,
         height: 1.5,
         color: Palette.colorToPalette(0XFF22272C),
+        fontWeight: FontWeight.w700,
+        leadingDistribution: TextLeadingDistribution.even,
+      ),
+    ),
+    TypographyTestCase(
+      name: 'Typography.caption2.bold.setColorByPalette(color: Palette.blue90)',
+      typography: Typography.caption2.bold.setColorByPalette(color: Palette.blue90),
+      expectTextStyle: TextStyle(
+        fontFamily: Assets.fontPretendard,
+        fontSize: 12,
+        height: 1.5,
+        color: Palette.colorToPalette(0XFF004391),
         fontWeight: FontWeight.w700,
         leadingDistribution: TextLeadingDistribution.even,
       ),
@@ -54,10 +66,10 @@ void main() {
     ),
     TypographyTestCase(
       name:
-          'Typography.caption2.bold .setDecoration(decoration: TextDecoration.underline).setColor(color: SemanticColor.text90)',
+          'Typography.caption2.bold.setDecoration(decoration: TextDecoration.underline).setColorBySemanticColor(color: SemanticColor.text90)',
       typography: Typography.caption2.bold //
           .setDecoration(decoration: TextDecoration.underline)
-          .setColor(color: SemanticColor.text90),
+          .setColorBySemanticColor(color: SemanticColor.text90),
       expectTextStyle: TextStyle(
         fontFamily: Assets.fontPretendard,
         fontSize: 12,

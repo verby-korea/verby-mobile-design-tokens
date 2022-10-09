@@ -1,5 +1,4 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:verby_mobile_design_tokens/colors/palette/palette.dart';
 import 'package:verby_mobile_design_tokens/verby_mobile_design_tokens.dart';
 
 class SemanticColorTestCase {
@@ -23,42 +22,48 @@ void main() {
   group(
     'SemanticColor Unit Test',
     () {
-      const List<SemanticColorTestCase> semanticColorTestCaseList = [
-        SemanticColorTestCase(
+      final List<SemanticColorTestCase> semanticColorTestCaseList = [
+        const SemanticColorTestCase(
           semanticColor: SemanticColor.main90,
-          expectedColor: BluePaletteExtension.blue90,
+          expectedColor: Palette.blue90,
         ),
-        SemanticColorTestCase(
+        const SemanticColorTestCase(
           semanticColor: SemanticColor.main70,
-          expectedColor: BluePaletteExtension.blue70,
+          expectedColor: Palette.blue70,
         ),
-        SemanticColorTestCase(
+        const SemanticColorTestCase(
           semanticColor: SemanticColor.subCaution,
-          expectedColor: RedPaletteExtension.red80,
+          expectedColor: Palette.red80,
         ),
-        SemanticColorTestCase(
+        const SemanticColorTestCase(
           semanticColor: SemanticColor.text90,
-          expectedColor: GrayPaletteExtension.gray90,
+          expectedColor: Palette.gray90,
         ),
-        SemanticColorTestCase(
+        const SemanticColorTestCase(
           semanticColor: SemanticColor.text50,
-          expectedColor: GrayPaletteExtension.gray50,
+          expectedColor: Palette.gray50,
         ),
-        SemanticColorTestCase(
+        const SemanticColorTestCase(
           semanticColor: SemanticColor.text30,
-          expectedColor: GrayPaletteExtension.gray30,
+          expectedColor: Palette.gray30,
         ),
-        SemanticColorTestCase(
+        const SemanticColorTestCase(
           semanticColor: SemanticColor.text10,
-          expectedColor: DefaultPaletteExtension.white,
+          expectedColor: Palette.white,
         ),
-        SemanticColorTestCase(
+        const SemanticColorTestCase(
           semanticColor: SemanticColor.background20,
-          expectedColor: GrayPaletteExtension.gray20,
+          expectedColor: Palette.gray20,
+        ),
+        const SemanticColorTestCase(
+          semanticColor: SemanticColor.background10,
+          expectedColor: Palette.white,
         ),
         SemanticColorTestCase(
-          semanticColor: SemanticColor.background10,
-          expectedColor: DefaultPaletteExtension.white,
+          semanticColor: SemanticColor.dim50,
+          expectedColor: Palette.colorToPalette(
+            Palette.gray50.withOpacity(0.5).value,
+          ),
         ),
       ];
 
